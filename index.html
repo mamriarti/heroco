@@ -2,9 +2,30 @@
                     <html lang="en">
                     <head>
                         <meta charset="UTF-8">
-                        <title>Новый сайт для пробы</title>
+                        <title>Изучение фремворка Vue.js</title>
+							<script type="text/javascript" src="vue.js"></script>
+							                    	
+							 
                     </head>
                     <body>
-                    <h1>Мой Тестовый сайт для пробы в хероку</h1>
+                    <h1>Изучение фремворка Vue.js</h1>
+
+	                    <!-- <div id="app">
+	    					{{ message }}
+						</div> -->
+
+						<div id="app">
+						  <p>{{ message }}</p>
+						  <input v-model="message">
+						</div>
+                    
+                    <script type="text/javascript">
+                      new Vue({
+							    el: '#app',
+							    data: {
+							        message: 'Hello Vue.js!'
+							    }
+							})
+                    </script>
                     </body>
                     </html>
